@@ -1,21 +1,19 @@
 package tech.kiwa.engine.component.drools;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.alibaba.druid.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.alibaba.druid.util.StringUtils;
-
 import tech.kiwa.engine.component.AbstractRuleItem;
 import tech.kiwa.engine.entity.ItemExecutedResult;
 import tech.kiwa.engine.entity.RESULT;
 import tech.kiwa.engine.entity.RuleItem;
 import tech.kiwa.engine.exception.RuleEngineException;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 public class RuleCreator implements DroolsPartsCreator {
     private Logger log = LoggerFactory.getLogger(RuleCreator.class);
@@ -23,6 +21,10 @@ public class RuleCreator implements DroolsPartsCreator {
     private RuleItem item = new RuleItem();
     private List<Condition> conditionList = new ArrayList<Condition>();
     private String command;
+    private DroolsBuilder builder = null;
+
+    private RuleCreator() {
+    }
 
     public RuleItem getItem() {
         return item;
@@ -93,7 +95,6 @@ public class RuleCreator implements DroolsPartsCreator {
                     for (FunctionCreator fun : builder.getFunctionList()) {
                         if (fun.getFunctionName().equals(funName)) {
                             funName = "fun." + funName;
-                            //funName = builder.getPackage().getName() + "." + funName;
                             break;
                         }
                     }
@@ -242,7 +243,6 @@ public class RuleCreator implements DroolsPartsCreator {
                     nextPos = this.getNextSection(content, iLoop + 1);
                     next = content.substring(iLoop, nextPos);
                     if (!next.equals("java")) {
-                        // TODO unsupported.
                         log.debug("unsupported language:" + word);
                     }
                     iLoop = nextPos;
@@ -254,7 +254,6 @@ public class RuleCreator implements DroolsPartsCreator {
                 case "lock-on-active":
                 case "duration":
                 case "agenda-group":
-                    // TODO unsupported.
                     log.debug("unsupported key word:" + word);
                     break;
                 case "end":
@@ -268,9 +267,6 @@ public class RuleCreator implements DroolsPartsCreator {
                     break;
             }
         }
-    }
-
-    private RuleCreator() {
     }
 
     private void parseCondition() {
@@ -396,8 +392,6 @@ public class RuleCreator implements DroolsPartsCreator {
         }
         return bRet;
     }
-
-    private DroolsBuilder builder = null;
 
     public DroolsBuilder getBuilder() {
         return builder;

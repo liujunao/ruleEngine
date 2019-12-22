@@ -1,15 +1,14 @@
 package tech.kiwa.engine.component.drools;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import tech.kiwa.engine.entity.RuleItem;
+import tech.kiwa.engine.utility.JavaStringCompiler;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import tech.kiwa.engine.entity.RuleItem;
-import tech.kiwa.engine.utility.JavaStringCompiler;
 
 public class DroolsBuilder {
     private Logger log = LoggerFactory.getLogger(DroolsBuilder.class);
@@ -46,7 +45,7 @@ public class DroolsBuilder {
     }
 
     public List<RuleItem> getRuleItemList() {
-        List<RuleItem> retList = new ArrayList<RuleItem>();
+        List<RuleItem> retList = new ArrayList<>();
         for (RuleCreator creator : ruleList) {
             retList.add(creator.getItem());
         }
@@ -89,8 +88,7 @@ public class DroolsBuilder {
             }
             Map<String, byte[]> clsMap = compiler.compile(fileName, javaContent);
             Class<DroolsPartsObject> cls = (Class<DroolsPartsObject>) compiler.loadClass(className, clsMap);
-            DroolsPartsObject obj = (DroolsPartsObject) cls.newInstance();
-
+            DroolsPartsObject obj = cls.newInstance();
             return obj;
         } catch (ClassNotFoundException | IOException | InstantiationException | IllegalAccessException e) {
             log.debug(e.getMessage());

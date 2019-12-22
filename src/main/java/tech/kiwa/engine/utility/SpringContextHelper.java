@@ -116,7 +116,7 @@ public class SpringContextHelper implements ApplicationContextAware {
     }
 
     /**
-     * 设置上下文。
+     * 设置上下文
      */
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {

@@ -1,28 +1,22 @@
 package tech.kiwa.engine;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import tech.kiwa.engine.component.AbstractRuleItem;
 import tech.kiwa.engine.component.AbstractRuleReader;
-import tech.kiwa.engine.component.impl.ComplexRuleExecutor;
-import tech.kiwa.engine.component.impl.DBRuleReader;
-import tech.kiwa.engine.component.impl.DefaultRuleExecutor;
-import tech.kiwa.engine.component.impl.DroolsRuleReader;
-import tech.kiwa.engine.component.impl.XMLRuleReader;
+import tech.kiwa.engine.component.impl.*;
 import tech.kiwa.engine.entity.EngineRunResult;
 import tech.kiwa.engine.entity.ItemExecutedResult;
 import tech.kiwa.engine.entity.RESULT;
 import tech.kiwa.engine.entity.RuleItem;
 import tech.kiwa.engine.exception.RuleEngineException;
 import tech.kiwa.engine.framework.ResultLogFactory;
-import tech.kiwa.engine.sample.Student;
 import tech.kiwa.engine.utility.PropertyUtil;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public class EngineService {
     private Logger log = LoggerFactory.getLogger(EngineService.class);
@@ -81,7 +75,6 @@ public class EngineService {
         EngineRunResult ret_Result = new EngineRunResult();
         ret_Result.setResult(RESULT.PASSED);
         ret_Result.setResult_desc("PASSED");
-
         for (RuleItem item : itemList) {
             log.debug("started to execute the rule item check. item = {}, ObjectId ={}", item.getItemNo(), object);
             if (StringUtils.isNotEmpty(item.getGroupExpress())) {
@@ -91,8 +84,9 @@ public class EngineService {
                 //如果是重复执行.
                 do {
                     result = executor.doCheck(item);
-                    if (result == null) break;
-
+                    if (result == null) {
+                        break;
+                    }
                     seq = this.writeExecutedLog(object, item, result);
                     if (result.getResult().compare(ret_Result.getResult()) > 0) {
                         ret_Result.setResult(result.getResult());
@@ -123,10 +117,10 @@ public class EngineService {
                 if (null == auditInstance) {
                     auditInstance = new DefaultRuleExecutor();
                 }
-                //直接地调用doCheck的函数。
+                //直接地调用doCheck的函数
                 auditInstance.setObject(object);
                 ItemExecutedResult result = null;
-                //如果是重复执行.
+                //如果是重复执行
                 do {
                     result = auditInstance.doCheck(item);
                     if (result == null) {
@@ -162,22 +156,5 @@ public class EngineService {
             throw e;
         }
         return seq;
-    }
-
-    public static void main(String[] args) {
-        EngineService service = new EngineService();
-        try {
-            for (int iLoop = 0; iLoop < 1000; iLoop++) {
-                Student st = new Student();
-                st.setAge(5);
-                st.name = "tom";
-                st.sex = 1;
-                EngineRunResult result = service.start(st);
-                System.out.println(result.getResult().getName());
-                System.out.println(st.getAge());
-            }
-        } catch (RuleEngineException e) {
-            e.printStackTrace();
-        }
     }
 }

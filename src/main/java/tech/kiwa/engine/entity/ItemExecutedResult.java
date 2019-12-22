@@ -7,7 +7,7 @@ public class ItemExecutedResult {
     private RESULT result = RESULT.EMPTY;
     private String remark;
     private boolean returnValue;
-    private int continueFlag = CONTINUE;            //默认可以继续
+    private int continueFlag = CONTINUE;  //默认可以继续
 
     public boolean getReturnValue() {
         return returnValue;
@@ -26,7 +26,6 @@ public class ItemExecutedResult {
         if (this.result == RESULT.WAIT) {
             continueFlag = BROKEN;
         }
-        //continueFlag =  ( this.result != RESULT.WAIT);		//非中断状态
     }
 
     public void setResult(String result) {
@@ -39,7 +38,6 @@ public class ItemExecutedResult {
         if (this.result == RESULT.WAIT) {
             continueFlag = BROKEN;
         }
-        //continueFlag =  ( this.result != RESULT.WAIT);		//非中断状态
     }
 
     public String getRemark() {

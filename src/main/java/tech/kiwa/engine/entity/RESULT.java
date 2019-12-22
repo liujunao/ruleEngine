@@ -1,5 +1,6 @@
 package tech.kiwa.engine.entity;
 
+//这个枚举类没看懂
 public enum RESULT {
     EMPTY(0), PASSED(1), CONCERNED(2), REJECTED(3), WAIT(4), SELFDEFINE(5);
 
@@ -10,7 +11,9 @@ public enum RESULT {
         this.setValue(value);
     }
 
-    private int value = 0;
+    //结果类型
+    private int value = 0; //数字表示 == 字符串表示
+    private String defaultDesc = ""; //字符串表示 == 数字表示
 
     public void setValue(int value) {
         switch (value) {
@@ -33,31 +36,6 @@ public enum RESULT {
                 break;
         }
         this.value = value;
-    }
-
-    public int compare(RESULT target) {
-        return this.value - target.value;
-    }
-
-    public static RESULT valueOf(int value) {
-        RESULT result = RESULT.EMPTY;
-        result.setValue(value);
-        return result;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    private String defaultDesc = "";
-
-    public String getName() {
-        return defaultDesc;
-    }
-
-    public void setName(String defaultDesc) {
-        this.defaultDesc = defaultDesc;
-        this.parse(defaultDesc);
     }
 
     public boolean parse(String value) {
@@ -94,5 +72,27 @@ public enum RESULT {
                 break;
         }
         return bRet;
+    }
+
+    public int compare(RESULT target) {
+        return this.value - target.value;
+    }
+
+    public static RESULT valueOf(int value) {
+        RESULT result = RESULT.EMPTY;
+        result.setValue(value);
+        return result;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getName() {
+        return defaultDesc;
+    }
+
+    public void setName(String defaultDesc) {
+        this.parse(defaultDesc);
     }
 }

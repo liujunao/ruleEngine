@@ -19,9 +19,7 @@ public class EmptyResultSetException extends RuleEngineException {
         super(message, cause);
     }
 
-    public EmptyResultSetException(String message, Throwable cause,
-                                   boolean enableSuppression,
-                                   boolean writableStackTrace) {
+    public EmptyResultSetException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }

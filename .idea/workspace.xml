@@ -1,0 +1,1613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37b4833d-8154-4058-a224-037daa1b3321" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/40fdb2ed-5c05-408e-b7fd-cbd6e4ad01b4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/40fdb2ed-5c05-408e-b7fd-cbd6e4ad01b4/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/liujunao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ojdbc_ojdbc_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RuleEngine.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/EngineService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/AbstractCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/AbstractComparisonOperator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/AbstractResultLogRecorder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/AbstractRuleItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/AbstractRuleReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/ConstraintCreator$ExpressionUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/ConstraintCreator$TYPE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/ConstraintCreator$Word.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/ConstraintCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/DeclareCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/DeclareInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/DroolsBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/DroolsPartsCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/DroolsPartsObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/FunctionCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/GlobalCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/ImportCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/LocalCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/PackageCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/QueryCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/RuleCreator$Condition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/drools/RuleCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/ComplexRuleExecutor$ExpressionUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/ComplexRuleExecutor$OperationUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/ComplexRuleExecutor$TYPE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/ComplexRuleExecutor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/DBRuleReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/DefaultRuleExecutor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/DroolsRuleExecutor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/DroolsRuleReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/component/impl/XMLRuleReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/entity/EngineRunResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/entity/ItemExecutedResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/entity/RESULT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/entity/RuleItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/exception/EmptyResultSetException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/exception/RuleEngineException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/framework/Component.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/framework/DBAccesser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/framework/FactoryMethod.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/framework/OperatorFactory$OPR_CODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/framework/OperatorFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/framework/ResultLogFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/sample/Student.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/DirectDBAccesser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/JavaStringCompiler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/MemoryClassLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/MemoryJavaFileManager$MemoryInputJavaFileObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/MemoryJavaFileManager$MemoryOutputJavaFileObject$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/MemoryJavaFileManager$MemoryOutputJavaFileObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/MemoryJavaFileManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/PropertyUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/SpringContextHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tech/kiwa/engine/utility/SpringDBAccesser.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/.gitignore" afterPath="$PROJECT_DIR$/.settings/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/EngineService.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/EngineService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractCommand.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractComparisonOperator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractComparisonOperator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractResultLogRecorder.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractResultLogRecorder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractRuleItem.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractRuleItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ConstraintCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ConstraintCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DeclareCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DeclareCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DroolsBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DroolsBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/FunctionCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/FunctionCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/GlobalCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/GlobalCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ImportCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ImportCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/LocalCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/LocalCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/PackageCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/PackageCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/QueryCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/QueryCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/RuleCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/RuleCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/ComplexRuleExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/ComplexRuleExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DBRuleReader.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DBRuleReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DefaultRuleExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DefaultRuleExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DroolsRuleReader.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DroolsRuleReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/XMLRuleReader.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/XMLRuleReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/EngineRunResult.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/EngineRunResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/ItemExecutedResult.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/ItemExecutedResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RESULT.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RESULT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RuleItem.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RuleItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/exception/EmptyResultSetException.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/exception/EmptyResultSetException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/exception/RuleEngineException.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/exception/RuleEngineException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/DBAccesser.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/DBAccesser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/OperatorFactory.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/OperatorFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/ResultLogFactory.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/ResultLogFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/DirectDBAccesser.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/DirectDBAccesser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/JavaStringCompiler.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/JavaStringCompiler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/MemoryClassLoader.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/MemoryClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/MemoryJavaFileManager.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/MemoryJavaFileManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/SpringContextHelper.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/SpringContextHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/SpringDBAccesser.java" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/SpringDBAccesser.java" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>subUnit</find>
+      <find>db.accesser</find>
+      <find>DBAccesser</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.settings/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RESULT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/EngineRunResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DBRuleReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/DBAccesser.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractComparisonOperator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/exception/EmptyResultSetException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ConstraintCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DeclareCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DroolsBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/FunctionCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/GlobalCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ImportCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/LocalCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/PackageCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/QueryCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/RuleCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/ComplexRuleExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DefaultRuleExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DroolsRuleReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/XMLRuleReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractResultLogRecorder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractRuleItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/ItemExecutedResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RuleItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/exception/RuleEngineException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/OperatorFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/ResultLogFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/DirectDBAccesser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/JavaStringCompiler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/MemoryClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/MemoryJavaFileManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/SpringContextHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/SpringDBAccesser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/EngineService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\soft\pro\java\maven\apache-maven-3.5.0\repository" />
+        <option name="mavenHome" value="D:/soft/pro/java/maven/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="D:\soft\pro\java\maven\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Hale" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Hale" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Ali-Check</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages ProjectPane="true" />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="false" />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RuleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RuleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RuleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RuleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RuleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utility" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RuleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RuleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RuleEngine" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37b4833d-8154-4058-a224-037daa1b3321" name="Default" comment="" />
+      <created>1576862287683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576862287683</updated>
+      <workItem from="1576862304098" duration="11173000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11173000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22087745" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TCPMON" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34401348" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24583964" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.settings/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reference/rule-mysql.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.drl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ruleEngine.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ruleconfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <folding>
+            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#0;n#plugins#0;n#pluginManagement#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/sample/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ConstraintCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-509">
+          <caret line="467" column="0" lean-forward="false" selection-start-line="467" selection-start-column="0" selection-end-line="467" selection-end-column="0" />
+          <folding>
+            <element signature="class#TYPE#0;class#ConstraintCreator#0" expanded="false" />
+            <element signature="class#Word#0;class#ConstraintCreator#0" expanded="false" />
+            <element signature="method#toString#0;class#Word#0;class#ConstraintCreator#0" expanded="false" />
+            <element signature="class#ExpressionUnit#0;class#ConstraintCreator#0" expanded="false" />
+            <element signature="method#ConstraintCreator#0;class#ConstraintCreator#0" expanded="false" />
+            <element signature="method#create#0;class#ConstraintCreator#0" expanded="false" />
+            <element signature="method#ChangeComma#0;class#ConstraintCreator#0" expanded="false" />
+            <element signature="docComment;method#trimExpress#0;class#ConstraintCreator#0" expanded="false" />
+            <element signature="method#trimExpress#0;class#ConstraintCreator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DeclareCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-536">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DeclareInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DroolsBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="79" column="80" lean-forward="false" selection-start-line="79" selection-start-column="80" selection-end-line="79" selection-end-column="80" />
+          <folding>
+            <element signature="method#build#0;class#DroolsBuilder#0" expanded="false" />
+            <element signature="method#getRuleItemList#0;class#DroolsBuilder#0" expanded="false" />
+            <element signature="method#compile#0;class#DroolsBuilder#0" expanded="false" />
+            <element signature="method#createObject#0;class#DroolsBuilder#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DroolsPartsCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/DroolsPartsObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/FunctionCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="method#toJavaString#0;class#FunctionCreator#0" expanded="false" />
+            <element signature="method#FunctionCreator#0;class#FunctionCreator#0" expanded="false" />
+            <element signature="method#create#0;class#FunctionCreator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/GlobalCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#253#280#0" expanded="false" />
+            <element signature="method#toJavaString#0;class#GlobalCreator#0" expanded="false" />
+            <element signature="method#GlobalCreator#0;class#GlobalCreator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ImportCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#195#222#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/LocalCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="method#LocalCreator#0;class#LocalCreator#0" expanded="false" />
+            <element signature="method#LocalCreator#1;class#LocalCreator#0" expanded="false" />
+            <element signature="method#setName#0;class#LocalCreator#0" expanded="false" />
+            <element signature="method#setReference#0;class#LocalCreator#0" expanded="false" />
+            <element signature="method#toJavaString#0;class#LocalCreator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/PackageCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#191#218#0" expanded="false" />
+            <element signature="method#PackageCreator#0;class#PackageCreator#0" expanded="false" />
+            <element signature="method#toJavaString#0;class#PackageCreator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/QueryCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="method#QueryCreator#0;class#QueryCreator#0" expanded="false" />
+            <element signature="method#create#0;class#QueryCreator#0" expanded="false" />
+            <element signature="method#run#0;class#QueryCreator#0" expanded="false" />
+            <element signature="method#operateCallback#0;class#QueryCreator#0" expanded="false" />
+            <element signature="method#toJavaString#0;class#QueryCreator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/RuleCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="395" column="27" lean-forward="false" selection-start-line="395" selection-start-column="27" selection-end-line="395" selection-end-column="27" />
+          <folding>
+            <element signature="method#RuleCreator#0;class#RuleCreator#0" expanded="false" />
+            <element signature="class#Condition#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#toJavaString#0;class#RuleCreator#0" expanded="false" />
+            <element signature="docComment;method#getNextSection#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#getNextSection#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#parse#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#parseCondition#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#parseCommand#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#runCondition#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#getResultList#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#operateCallback#0;class#RuleCreator#0" expanded="false" />
+            <element signature="method#create#0;class#RuleCreator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/ComplexRuleExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="201" column="28" lean-forward="true" selection-start-line="201" selection-start-column="28" selection-end-line="201" selection-end-column="28" />
+          <folding>
+            <element signature="class#TYPE#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="class#OperationUnit#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#toString#0;class#OperationUnit#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="class#ExpressionUnit#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#calculate#0;class#ExpressionUnit#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#toString#0;class#ExpressionUnit#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="docComment;method#formatExpress#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#formatExpress#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="docComment;method#trimExpress#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#trimExpress#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#breakExpress#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#doCheck#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#executeCommand#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#getReaderService#0;class#ComplexRuleExecutor#0" expanded="false" />
+            <element signature="method#calculate#0;class#ComplexRuleExecutor#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DBRuleReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding>
+            <element signature="docComment;method#loadDBAccesser#0;class#DBRuleReader#0" expanded="false" />
+            <element signature="method#loadDBAccesser#0;class#DBRuleReader#0" expanded="false" />
+            <element signature="docComment;method#readRuleItemList#0;class#DBRuleReader#0" expanded="false" />
+            <element signature="method#readRuleItemList#0;class#DBRuleReader#0" expanded="false" />
+            <element signature="docComment;method#getRuleItemCount#0;class#DBRuleReader#0" expanded="false" />
+            <element signature="method#getRuleItemCount#0;class#DBRuleReader#0" expanded="false" />
+            <element signature="docComment;method#getRuleItem#0;class#DBRuleReader#0" expanded="false" />
+            <element signature="method#getRuleItem#0;class#DBRuleReader#0" expanded="false" />
+            <element signature="e#5220#5232#0" expanded="false" />
+            <element signature="method#setterRuleItem#0;class#DBRuleReader#0" expanded="false" />
+            <marker date="1576898876863" expanded="false" signature="1761:1869" ph="select * fro... missingValue" />
+            <marker date="1576898876863" expanded="false" signature="3427:3519" ph="select count... missingValue" />
+            <marker date="1576898876863" expanded="false" signature="4491:4593" ph="select * fro... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DefaultRuleExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="128" column="109" lean-forward="false" selection-start-line="128" selection-start-column="109" selection-end-line="128" selection-end-column="109" />
+          <folding>
+            <element signature="method#doCheck#0;class#DefaultRuleExecutor#0" expanded="false" />
+            <element signature="method#executeCommand#0;class#DefaultRuleExecutor#0" expanded="false" />
+            <element signature="method#getParamValue#0;class#DefaultRuleExecutor#0" expanded="false" />
+            <element signature="e#4706#4736#0" expanded="false" />
+            <element signature="method#loadDBAccesser#0;class#DefaultRuleExecutor#0" expanded="false" />
+            <element signature="docComment;method#executeSQL#0;class#DefaultRuleExecutor#0" expanded="false" />
+            <element signature="method#executeSQL#0;class#DefaultRuleExecutor#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DroolsRuleExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="method#doCheck#0;class#DroolsRuleExecutor#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/DroolsRuleReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-303">
+          <caret line="107" column="58" lean-forward="false" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="58" />
+          <folding>
+            <element signature="method#readRuleItemList#0;class#DroolsRuleReader#0" expanded="false" />
+            <element signature="method#getRuleItemCount#0;class#DroolsRuleReader#0" expanded="false" />
+            <element signature="method#getRuleItem#0;class#DroolsRuleReader#0" expanded="false" />
+            <element signature="method#convertToXml#0;class#DroolsRuleReader#0" expanded="false" />
+            <element signature="method#removeComments#0;class#DroolsRuleReader#0" expanded="false" />
+            <element signature="method#analyzeTopPhase#0;class#DroolsRuleReader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/XMLRuleReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2399">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractComparisonOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractResultLogRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractRuleItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#getService#0;class#AbstractRuleItem#0" expanded="false" />
+            <element signature="docComment;method#getService#1;class#AbstractRuleItem#0" expanded="false" />
+            <element signature="docComment;method#analyze#0;class#AbstractRuleItem#0" expanded="false" />
+            <element signature="method#analyze#0;class#AbstractRuleItem#0" expanded="false" />
+            <element signature="docComment;method#comparisonOperate#0;class#AbstractRuleItem#0" expanded="false" />
+            <element signature="method#comparisonOperate#0;class#AbstractRuleItem#0" expanded="false" />
+            <element signature="method#extendComparisonOperate#0;class#AbstractRuleItem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractRuleReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;method#sortItem#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="method#sortItem#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="docComment;method#filterItem#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="method#filterItem#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="docComment;method#preCompile#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="method#preCompile#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="docComment;method#clearRuleItemCache#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="method#clearRuleItemCache#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="docComment;method#updateRuleItem#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="method#updateRuleItem#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="docComment;method#queryMiniPriority#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="method#queryMiniPriority#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="docComment;method#queryMaxPriority#0;class#AbstractRuleReader#0" expanded="false" />
+            <element signature="method#queryMaxPriority#0;class#AbstractRuleReader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/EngineRunResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="method#setResult#1;class#EngineRunResult#0" expanded="false" />
+            <element signature="method#setResult_desc#0;class#EngineRunResult#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/ItemExecutedResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RESULT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="method#RESULT#0;class#RESULT#0" expanded="false" />
+            <element signature="method#setValue#0;class#RESULT#0" expanded="false" />
+            <element signature="method#parse#0;class#RESULT#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RuleItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="243" column="18" lean-forward="false" selection-start-line="243" selection-start-column="18" selection-end-line="243" selection-end-column="18" />
+          <folding>
+            <element signature="docComment;method#setMappedValue#0;class#RuleItem#0" expanded="false" />
+            <element signature="method#setMappedValue#0;class#RuleItem#0" expanded="false" />
+            <element signature="docComment;method#getValue#0;class#RuleItem#0" expanded="false" />
+            <element signature="method#getValue#0;class#RuleItem#0" expanded="false" />
+            <element signature="method#setComparisonCode#0;class#RuleItem#0" expanded="false" />
+            <element signature="method#setComparisonValue#0;class#RuleItem#0" expanded="false" />
+            <element signature="method#setContinueFlag#0;class#RuleItem#0" expanded="false" />
+            <element signature="method#setParentItemNo#0;class#RuleItem#0" expanded="false" />
+            <element signature="method#setGroupExpress#0;class#RuleItem#0" expanded="false" />
+            <element signature="method#setAttach#0;class#RuleItem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/exception/RuleEngineException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/exception/EmptyResultSetException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="21" column="95" lean-forward="false" selection-start-line="21" selection-start-column="95" selection-end-line="21" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/DBAccesser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/FactoryMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/OperatorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="9" column="89" lean-forward="false" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+          <folding>
+            <element signature="class#OPR_CODE#0;class#OperatorFactory#0" expanded="false" />
+            <element signature="method#isReserved#0;class#OPR_CODE#0;class#OperatorFactory#0" expanded="false" />
+            <element signature="method#OperatorFactory#0;class#OperatorFactory#0" expanded="false" />
+            <element signature="method#acceptRegister#0;class#OperatorFactory#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/framework/ResultLogFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="method#ResultLogFactory#0;class#ResultLogFactory#0" expanded="false" />
+            <element signature="e#693#694#0" expanded="false" />
+            <element signature="e#756#757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/DirectDBAccesser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="108" column="61" lean-forward="false" selection-start-line="108" selection-start-column="61" selection-end-line="108" selection-end-column="61" />
+          <folding>
+            <element signature="docComment;method#getDataSource#0;class#DirectDBAccesser#0" expanded="false" />
+            <element signature="method#getDataSource#0;class#DirectDBAccesser#0" expanded="false" />
+            <element signature="method#openConnection#0;class#DirectDBAccesser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/JavaStringCompiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1049">
+          <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+          <folding>
+            <element signature="method#JavaStringCompiler#0;class#JavaStringCompiler#0" expanded="false" />
+            <element signature="docComment;method#compile#0;class#JavaStringCompiler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/MemoryClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding>
+            <element signature="method#MemoryClassLoader#0;class#MemoryClassLoader#0" expanded="false" />
+            <element signature="method#MemoryClassLoader#1;class#MemoryClassLoader#0" expanded="false" />
+            <element signature="method#findClass#0;class#MemoryClassLoader#0" expanded="false" />
+            <element signature="method#queryLoadedClass#0;class#MemoryClassLoader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/MemoryJavaFileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-837">
+          <caret line="35" column="111" lean-forward="false" selection-start-line="35" selection-start-column="111" selection-end-line="35" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/PropertyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/SpringContextHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="118" column="12" lean-forward="true" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/utility/SpringDBAccesser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/kiwa/engine/EngineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>servlet-api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>RuleEngine</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

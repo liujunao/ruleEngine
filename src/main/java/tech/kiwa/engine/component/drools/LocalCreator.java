@@ -5,6 +5,18 @@ public class LocalCreator implements DroolsPartsCreator {
     private String reference = null;
     private Object value = null;
 
+    public LocalCreator(String name, String reference) {
+        if (null != name) {
+            this.name = name.trim();
+        }
+        if (null != reference) {
+            this.reference = reference.trim();
+        }
+    }
+
+    public LocalCreator() {
+    }
+
     public Object getValue() {
         return value;
     }
@@ -43,17 +55,5 @@ public class LocalCreator implements DroolsPartsCreator {
         sbf.append(" ;\n");
 
         return sbf.toString();
-    }
-
-    public LocalCreator(String name, String reference) {
-        if (null != name) {
-            this.name = name.trim();
-        }
-        if (null != reference) {
-            this.reference = reference.trim();
-        }
-    }
-
-    public LocalCreator() {
     }
 }

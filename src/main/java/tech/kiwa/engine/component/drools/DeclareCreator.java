@@ -1,12 +1,10 @@
 package tech.kiwa.engine.component.drools;
 
+import com.alibaba.druid.util.StringUtils;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-
-import com.alibaba.druid.util.StringUtils;
-
-import tech.kiwa.engine.component.drools.ImportCreator;
 
 public class DeclareCreator implements DroolsPartsCreator {
     private String name;
@@ -23,7 +21,6 @@ public class DeclareCreator implements DroolsPartsCreator {
     private DroolsBuilder builder = null;
 
     private DeclareCreator() {
-
     }
 
     public static DeclareCreator create(String content, DroolsBuilder builder) {
@@ -39,7 +36,6 @@ public class DeclareCreator implements DroolsPartsCreator {
 
         String[] lines = content.split("\\n|\\r");
         String title = lines[0].trim();
-
         String[] sections = title.split("\\s+|\\t|\\(|,|\\)");
         if (sections.length >= 2) {
             creator.name = sections[1];
@@ -54,9 +50,8 @@ public class DeclareCreator implements DroolsPartsCreator {
                     line = line.substring(0, line.length() - 1);
                 }
                 sections = line.split(":");
-                //ASSERT sections.length = 2;
                 if (creator.attributes == null) {
-                    creator.attributes = new HashMap<String, String>();
+                    creator.attributes = new HashMap<>();
                 }
                 creator.attributes.put(sections[0].trim(), sections[1].trim());
             }
@@ -64,6 +59,7 @@ public class DeclareCreator implements DroolsPartsCreator {
         return creator;
     }
 
+    @Override
     public String toJavaString() {
         StringBuffer javaBuffer = new StringBuffer();
         javaBuffer.append(builder.getPackage().toJavaString());
@@ -91,7 +87,6 @@ public class DeclareCreator implements DroolsPartsCreator {
             javaBuffer.append(";\n");
         }
         javaBuffer.append("\n");
-        //Implement the getValue function.
         javaBuffer.append("  public Object getValue(String name){ \n");
         javaBuffer.append("\n");
         javaBuffer.append("  Object value = null;\n");
@@ -102,10 +97,8 @@ public class DeclareCreator implements DroolsPartsCreator {
         }
         javaBuffer.append("\n");
         javaBuffer.append("  return value;\n");
-
         javaBuffer.append("  }");
         javaBuffer.append("\n");
-        //Implement the setValue function.
         javaBuffer.append("  public void setValue(String name, Object value){ \n");
         javaBuffer.append("\n");
         for (String name : nameSet) {

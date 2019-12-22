@@ -5,6 +5,8 @@ import com.alibaba.druid.util.StringUtils;
 public class ImportCreator implements DroolsPartsCreator {
     String fullName;
     String simpleName;
+    @SuppressWarnings("unused")
+    private DroolsBuilder builder = null;
 
     public String getFullName() {
         return fullName;
@@ -14,6 +16,7 @@ public class ImportCreator implements DroolsPartsCreator {
         return simpleName;
     }
 
+    @Override
     public String toString() {
         return "import " + fullName + ";\n";
     }
@@ -24,11 +27,7 @@ public class ImportCreator implements DroolsPartsCreator {
     }
 
     private ImportCreator() {
-
     }
-
-    @SuppressWarnings("unused")
-    private DroolsBuilder builder = null;
 
     public static ImportCreator create(String content, DroolsBuilder builder) {
         if (StringUtils.isEmpty(content)) {

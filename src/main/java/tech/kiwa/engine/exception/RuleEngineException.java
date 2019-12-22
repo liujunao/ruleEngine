@@ -19,10 +19,7 @@ public class RuleEngineException extends Exception {
         super(message, cause);
     }
 
-    public RuleEngineException(String message, Throwable cause,
-                               boolean enableSuppression,
-                               boolean writableStackTrace) {
+    public RuleEngineException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
-
 }

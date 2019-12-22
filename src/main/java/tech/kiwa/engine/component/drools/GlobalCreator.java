@@ -6,6 +6,8 @@ public class GlobalCreator implements DroolsPartsCreator {
     private String name = null;
     private String reference = null;
     private Object value = null;
+    @SuppressWarnings("unused")
+    private DroolsBuilder builder = null;
 
     public Object getValue() {
         return value;
@@ -36,11 +38,7 @@ public class GlobalCreator implements DroolsPartsCreator {
     }
 
     private GlobalCreator() {
-
     }
-
-    @SuppressWarnings("unused")
-    private DroolsBuilder builder = null;
 
     public static GlobalCreator create(String content, DroolsBuilder builder) {
         if (StringUtils.isEmpty(content)) {

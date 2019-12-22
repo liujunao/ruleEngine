@@ -1,21 +1,16 @@
 package tech.kiwa.engine.component.impl;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import tech.kiwa.engine.component.AbstractRuleReader;
 import tech.kiwa.engine.entity.RuleItem;
 import tech.kiwa.engine.exception.RuleEngineException;
 import tech.kiwa.engine.framework.DBAccesser;
 import tech.kiwa.engine.utility.PropertyUtil;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 //处理 database 规则
 public class DBRuleReader extends AbstractRuleReader {
@@ -32,7 +27,7 @@ public class DBRuleReader extends AbstractRuleReader {
     @SuppressWarnings("unchecked")
     private DBAccesser loadDBAccesser() throws Exception {
         if (accesser == null) {
-            String className = PropertyUtil.getProperty("db.accesser"); //db.accesser 属性作用？？？
+            String className = PropertyUtil.getProperty("db.accesser"); //db.accesser 配置数据连接方式
             Class<DBAccesser> dbClass = (Class<DBAccesser>) Class.forName(className);
             synchronized (DBAccesser.class) { //单例模式
                 if (accesser == null) {

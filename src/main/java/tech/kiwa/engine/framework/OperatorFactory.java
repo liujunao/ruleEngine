@@ -1,13 +1,13 @@
 package tech.kiwa.engine.framework;
 
-import java.util.HashMap;
-
 import tech.kiwa.engine.component.AbstractComparisonOperator;
 import tech.kiwa.engine.exception.RuleEngineException;
 
+import java.util.HashMap;
+
 public class OperatorFactory implements FactoryMethod {
     private static OperatorFactory instance = new OperatorFactory();
-    private static HashMap<String, AbstractComparisonOperator> operatorMap = new HashMap<String, AbstractComparisonOperator>();
+    private static HashMap<String, AbstractComparisonOperator> operatorMap = new HashMap<>();
 
     public final static class OPR_CODE {
         public static final String EQUAL = "01";
@@ -99,6 +99,7 @@ public class OperatorFactory implements FactoryMethod {
         return instance;
     }
 
+    @Override
     public void acceptRegister(Component opt) {
         AbstractComparisonOperator operator = (AbstractComparisonOperator) opt;
         operatorMap.put(operator.getComparisonCode(), operator);

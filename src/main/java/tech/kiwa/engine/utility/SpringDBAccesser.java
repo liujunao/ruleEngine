@@ -1,16 +1,14 @@
 package tech.kiwa.engine.utility;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-
-import javax.sql.DataSource;
-
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
-
 import tech.kiwa.engine.framework.DBAccesser;
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 //通过SpringContext获取数据库连接
 @Service
@@ -27,7 +25,6 @@ public class SpringDBAccesser implements ApplicationContextAware, DBAccesser {
         try {
             return ds.getConnection();
         } catch (SQLException e) {
-
             e.printStackTrace();
         }
         return null;

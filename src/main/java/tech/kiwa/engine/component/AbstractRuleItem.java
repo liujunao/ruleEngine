@@ -1,17 +1,15 @@
 package tech.kiwa.engine.component;
 
-import java.math.BigDecimal;
-import java.util.Map;
-import java.util.Set;
-
-import org.springframework.beans.BeansException;
-
 import tech.kiwa.engine.entity.ItemExecutedResult;
 import tech.kiwa.engine.entity.RuleItem;
 import tech.kiwa.engine.exception.EmptyResultSetException;
 import tech.kiwa.engine.exception.RuleEngineException;
 import tech.kiwa.engine.framework.OperatorFactory;
 import tech.kiwa.engine.utility.SpringContextHelper;
+
+import java.math.BigDecimal;
+import java.util.Map;
+import java.util.Set;
 
 public abstract class AbstractRuleItem {
     protected Object object;
@@ -21,49 +19,37 @@ public abstract class AbstractRuleItem {
     }
 
     /**
-     * 获取SpringMVC中的Service对象，如果未使用SpringMVC，则返回null.
+     * 获取 SpringMVC 中的 Service 对象，若未使用 SpringMVC，则返回 null
      *
-     * @param seriveName Service名称，
-     * @return 返回的Serivce对象。
+     * @param serviceName Service名称
+     * @return 返回的 Serivce 对象
      */
-    protected Object getService(String seriveName) {
-        Object objRet = null;
-        try {
-            objRet = SpringContextHelper.getBean(seriveName);
-        } catch (BeansException e) {
-        }
-        return objRet;
+    protected Object getService(String serviceName) {
+        return SpringContextHelper.getBean(serviceName);
     }
 
     /**
-     * 获取SpringMVC中的Service对象。 如果未使用SpringMVC，则返回null.
+     * 获取 SpringMVC 中的 Service 对象，若未使用 SpringMVC，则返回 null
      *
      * @param <T>          参数类型的模板类
-     * @param requiredType Serivce的类型，即具体的类。
-     * @return 返回的Serivce对象。
+     * @param requiredType Service 的类型，即具体的类
+     * @return 返回的 Service 对象
      */
     protected <T> T getService(Class<T> requiredType) {
-        T objRet = null;
-        try {
-            objRet = SpringContextHelper.getBean(requiredType);
-        } catch (BeansException e) {
-        }
-        return objRet;
+        return SpringContextHelper.getBean(requiredType);
     }
 
     public abstract ItemExecutedResult doCheck(RuleItem item) throws RuleEngineException;
 
     /**
-     * analyze the data of when condition.
+     * 分析数据
      *
      * @param resultSet 返回的结果集，从数据库读出来的
      * @param item      规则定义体
-     * @return 运行是成功还是失败 true or false.
-     * @throws EmptyResultSetException 结果集是空时的的返回．
-     * @throws RuleEngineException     其他的异常
+     * @return 运行是成功还是失败 true or false
+     * @throws EmptyResultSetException 结果集是空时的的返回
      */
-    protected boolean analyze(Map<String, Object> resultSet, RuleItem item)
-            throws EmptyResultSetException, RuleEngineException {
+    protected boolean analyze(Map<String, Object> resultSet, RuleItem item) throws RuleEngineException {
         String retValue = null;
         if (resultSet.containsKey("cnt")) {
             retValue = resultSet.get("cnt").toString();
@@ -110,14 +96,13 @@ public abstract class AbstractRuleItem {
      * @return 根据ComparisonCode运行的结果。 true or flase。
      * @throws RuleEngineException 参数不合法，或者比较操作符不合法。
      */
-    public static boolean comparisonOperate(String subject, String comparisonCode, String baseline)
-            throws RuleEngineException {
+    public static boolean comparisonOperate(String subject, String comparisonCode, String baseline) throws RuleEngineException {
         boolean bRet = false;
         if (null == subject || null == baseline || null == comparisonCode) {
             throw new RuleEngineException("null pointer error of subject or baseline or comparison code.");
         }
-        BigDecimal bdSubject = null;
-        BigDecimal object = null;
+        BigDecimal bdSubject;
+        BigDecimal object;
         switch (comparisonCode) {
             case OperatorFactory.OPR_CODE.EQUAL:
                 try {
@@ -204,8 +189,7 @@ public abstract class AbstractRuleItem {
         return bRet;
     }
 
-    private static boolean extendComparisonOperate(String subject, String comparisonCode, String baseline)
-            throws RuleEngineException {
+    private static boolean extendComparisonOperate(String subject, String comparisonCode, String baseline) throws RuleEngineException {
         OperatorFactory optMgr = OperatorFactory.getInstance();
         return optMgr.runOperator(subject, comparisonCode, baseline);
     }

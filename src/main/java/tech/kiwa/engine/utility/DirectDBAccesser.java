@@ -1,27 +1,24 @@
 package tech.kiwa.engine.utility;
 
+import com.alibaba.druid.filter.config.ConfigTools;
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import tech.kiwa.engine.framework.DBAccesser;
+
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Properties;
 
-import javax.sql.DataSource;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.alibaba.druid.filter.config.ConfigTools;
-import com.alibaba.druid.pool.DruidDataSourceFactory;
-import com.alibaba.druid.util.StringUtils;
-
-import tech.kiwa.engine.framework.DBAccesser;
-
 public class DirectDBAccesser implements DBAccesser {
     private static Logger log = LoggerFactory.getLogger(DirectDBAccesser.class);
 
     private static boolean UseDruid = true;
-    private static ArrayList<Connection> connList = new ArrayList<Connection>(); //只用了一个连接， 没有用到连接池
+    private static ArrayList<Connection> connList = new ArrayList<>(); //只用了一个连接， 没有用到连接池
     private static volatile DataSource dataSource = null;
 
     public static boolean isUseDruid() {
@@ -58,8 +55,8 @@ public class DirectDBAccesser implements DBAccesser {
     private Connection openConnection() {
         Connection conn = null;
 
-        String driver = PropertyUtil.getProperty("jdbc.driver");        // "oracle.jdbc.driver.OracleDriver";
-        String url = PropertyUtil.getProperty("jdbc.url");                //"jdbc:Oracle:thin:@localhost:1521:orcl";
+        String driver = PropertyUtil.getProperty("jdbc.driver");
+        String url = PropertyUtil.getProperty("jdbc.url");
         String userName = PropertyUtil.getProperty("jdbc.username");
         String password = PropertyUtil.getProperty("jdbc.password");
         String publicKey = PropertyUtil.getProperty("jdbc.publickey");
@@ -81,6 +78,7 @@ public class DirectDBAccesser implements DBAccesser {
         return conn;
     }
 
+    @Override
     public Connection getConnection() {
         if (UseDruid) {
             try {
@@ -98,7 +96,7 @@ public class DirectDBAccesser implements DBAccesser {
                 log.error(e.getMessage());
             }
         }
-        //如果是直接连接,或者是druid读取失败的情况下。
+        //如果是直接连接,或者是druid读取失败的情况下
         for (Connection conn : connList) {
             try {
                 if (!conn.isClosed()) {
@@ -112,7 +110,6 @@ public class DirectDBAccesser implements DBAccesser {
         return openConnection();
     }
 
-    //@SuppressWarnings("unused")
     public void closeConnection(Connection conn) {
         if (UseDruid) {
             try {

@@ -1,5 +1,7 @@
 package tech.kiwa.engine.utility;
 
+import javax.tools.*;
+import javax.tools.JavaFileObject.Kind;
 import java.io.ByteArrayOutputStream;
 import java.io.FilterOutputStream;
 import java.io.IOException;
@@ -9,23 +11,16 @@ import java.nio.CharBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.tools.FileObject;
-import javax.tools.ForwardingJavaFileManager;
-import javax.tools.JavaFileManager;
-import javax.tools.JavaFileObject;
-import javax.tools.JavaFileObject.Kind;
-import javax.tools.SimpleJavaFileObject;
-
 class MemoryJavaFileManager extends ForwardingJavaFileManager<JavaFileManager> {
     // compiled classes in bytes:
-    final Map<String, byte[]> classBytes = new HashMap<String, byte[]>();
+    final Map<String, byte[]> classBytes = new HashMap<>();
 
     MemoryJavaFileManager(JavaFileManager fileManager) {
         super(fileManager);
     }
 
     public Map<String, byte[]> getClassBytes() {
-        return new HashMap<String, byte[]>(this.classBytes);
+        return new HashMap<>(this.classBytes);
     }
 
     @Override
@@ -38,8 +33,7 @@ class MemoryJavaFileManager extends ForwardingJavaFileManager<JavaFileManager> {
     }
 
     @Override
-    public JavaFileObject getJavaFileForOutput(JavaFileManager.Location location, String className, Kind kind,
-                                               FileObject sibling) throws IOException {
+    public JavaFileObject getJavaFileForOutput(JavaFileManager.Location location, String className, Kind kind, FileObject sibling) throws IOException {
         if (kind == Kind.CLASS) {
             return new MemoryOutputJavaFileObject(className);
         } else {

@@ -5,8 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class MemoryClassLoader extends ClassLoader {
-    // class name to class bytes:
-    private Map<String, byte[]> classBytes = new HashMap<String, byte[]>();
+    private Map<String, byte[]> classBytes = new HashMap<>();
 
     public MemoryClassLoader(Map<String, byte[]> classBytes) {
         super(MemoryClassLoader.class.getClassLoader());

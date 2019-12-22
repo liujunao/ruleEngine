@@ -2,8 +2,8 @@ package tech.kiwa.engine.entity;
 
 public class EngineRunResult {
     private RESULT result = RESULT.EMPTY;
-    private String result_desc;
-    private String sequence;
+    private String result_desc; //对应 RESULT 的 defaultDesc，即字符串表示的结果类型
+    private String sequence; //？？？
 
     public RESULT getResult() {
         return result;
@@ -16,10 +16,7 @@ public class EngineRunResult {
     public void setResult(String result) {
         boolean bRet = this.result.parse(result);
         if (!bRet) {
-            try {
-                this.result.setValue(Integer.parseInt(result));
-            } catch (NumberFormatException e) {
-            }
+            this.result.setValue(Integer.parseInt(result));
         }
     }
 

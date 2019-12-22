@@ -1,40 +1,37 @@
 package tech.kiwa.engine.component.drools;
 
+import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import tech.kiwa.engine.exception.RuleEngineException;
+import tech.kiwa.engine.framework.OperatorFactory;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.alibaba.druid.util.StringUtils;
-
-import tech.kiwa.engine.exception.RuleEngineException;
-import tech.kiwa.engine.framework.OperatorFactory;
-
 public class ConstraintCreator implements DroolsPartsCreator {
-    private String content;
-    private List<Word> express = null;
     private Logger log = LoggerFactory.getLogger(ConstraintCreator.class);
 
-    // 1 = 运算变量; 2 = 运算符;  3 = 双目运算符号;   4 = 单目运算符号 ; 5 = 左括号 ; 6 = 右括号
-    private static enum TYPE {VARIABLE, OPERATOR, BINOCULAR, MONOCULAR, LEFT_BRACKET, RIGHT_BRACKET}
-
-    ;
+    private String content;
+    private List<Word> express = null;
+    private DroolsPartsCreator container = null;
     private static final String[] KEYWORDS = new String[]{"<=", ">=", "==", "!=", "contains", "not contains",
             "memberof", "not memberof", "matches", "not matches", "<", ">"};
-    private DroolsPartsCreator container = null;
+    // 1 = 运算变量; 2 = 运算符;  3 = 双目运算符号;   4 = 单目运算符号 ; 5 = 左括号 ; 6 = 右括号
+    private enum TYPE {
+        VARIABLE, OPERATOR, BINOCULAR, MONOCULAR, LEFT_BRACKET, RIGHT_BRACKET
+    }
 
     class Word {
         public TYPE type;
         public String element;
         public int level = 0;
 
+        @Override
         public String toString() {
             return "[type=" + String.valueOf(type) + " element = '" + element + "' level = " + String.valueOf(level) + "]";
         }
-
-        public List<Word> subUnit;
     }
 
     class ExpressionUnit {
@@ -47,6 +44,9 @@ public class ConstraintCreator implements DroolsPartsCreator {
         private boolean result_value = false;
         private String name = null;
 
+        public List<Word> leftSubList = null;
+        public List<Word> rightSubList = null;
+
         public boolean calculate() {
             if ("!".equals(operator)) {
                 result_value = !right.calculate();
@@ -58,6 +58,7 @@ public class ConstraintCreator implements DroolsPartsCreator {
             return result_value;
         }
 
+        @Override
         public String toString() {
             StringBuffer ret = new StringBuffer();
             if (leftSubList != null) {
@@ -75,14 +76,12 @@ public class ConstraintCreator implements DroolsPartsCreator {
             }
             return ret.toString();
         }
-
-        public List<Word> leftSubList = null;
-        public List<Word> rightSubList = null;
     }
 
     private ConstraintCreator() {
     }
 
+    @Override
     public String toString() {
         return content;
     }
@@ -204,8 +203,8 @@ public class ConstraintCreator implements DroolsPartsCreator {
                         }
                     }
                     break;
-                case '\n':        //去除换行。
-                    //扫尾的字符串也要添加进去。
+                case '\n':        //去除换行
+                    //扫尾的字符串也要添加进去
                     if (element.length() > 0) {
                         String end = element.toString();
                         if (")".equals(end)) {
@@ -222,14 +221,14 @@ public class ConstraintCreator implements DroolsPartsCreator {
                         }
                     }
                     break;
-                case '\r':        //去除回车。
+                case '\r':        //去除回车
                     break;
                 default:
                     element.append(alphabet);
                     break;
             }
         }
-        //扫尾的字符串也要添加进去。
+        //扫尾的字符串也要添加进去
         if (element.length() > 0) {
             String end = element.toString();
             if (")".equals(end)) {
@@ -311,31 +310,26 @@ public class ConstraintCreator implements DroolsPartsCreator {
     }
 
     /**
-     * 去除前后端无用的括号。
+     * 去除前后端无用的括号
      *
      * @param list
-     * @param minLevel -- 如果是-1，那么需要重新累计level值。
+     * @param minLevel -- 如果是-1，那么需要重新累计level值
      * @return
      */
     private List<Word> trimExpress(List<Word> list, int minLevel) {
-        //无括号表达式。
-        if (list.size() <= 1) {
+        if (list.size() <= 1) { //无括号表达式
             return list;
         }
-        //开头不是左括号
-        if (list.get(0).type != TYPE.LEFT_BRACKET) {
+        if (list.get(0).type != TYPE.LEFT_BRACKET) { //开头不是左括号
             return list;
         }
-        //开头是左括号，但是结尾不是右括号。
-        if (list.get(0).type == TYPE.LEFT_BRACKET && list.get(list.size() - 1).type != TYPE.RIGHT_BRACKET) {
+        if (list.get(0).type == TYPE.LEFT_BRACKET && list.get(list.size() - 1).type != TYPE.RIGHT_BRACKET) { //开头是左括号，但是结尾不是右括号
             return list;
         }
-        //最少括号数目是0，就是中间有非括号的情况 () + ()。
-        if (minLevel == 0) {
+        if (minLevel == 0) { //最少括号数目是0，就是中间有非括号的情况 () + ()
             return list;
         }
-        //未知的最小括号数目，重新取得。
-        if (minLevel < 0) {
+        if (minLevel < 0) { //未知的最小括号数目，重新取得
             int tempLevel = Integer.MAX_VALUE;
             for (Word unit : list) {
                 if (tempLevel > unit.level) {
@@ -344,53 +338,37 @@ public class ConstraintCreator implements DroolsPartsCreator {
             }
             minLevel = tempLevel;
         }
-        //最少括号数目是0，就是中间有非括号的情况 () + ()。
-        if (minLevel <= 0) {
+        if (minLevel <= 0) { //最少括号数目是0，就是中间有非括号的情况 () + ()
             return list;
         }
-        //依次拷贝到去除多余括号的数组中去。
-        List<Word> newList = new ArrayList<Word>();
+        List<Word> newList = new ArrayList<>(); //依次拷贝到去除多余括号的数组中去
         for (int iLoop = 0; iLoop < list.size(); iLoop++) {
             Word unit = list.get(iLoop);
             if (iLoop < minLevel) {
-                //非标准括号，可能是表达式不合格。
-                if (unit.type != TYPE.LEFT_BRACKET) {
-                    System.err.println("括号个数不匹配。");
-                    //throw new Exception("括号个数不匹配。");
+                if (unit.type != TYPE.LEFT_BRACKET) { //非标准括号，可能是表达式不合格
+                    System.err.println("括号个数不匹配...");
                 }
             } else if (iLoop >= list.size() - minLevel) {
                 if (unit.type != TYPE.RIGHT_BRACKET) {
-                    //throw new Exception("括号个数不匹配。");
-                    System.err.println("括号个数不匹配。");
+                    System.err.println("括号个数不匹配...");
                 }
             } else {
                 unit.level = unit.level - minLevel;
                 newList.add(unit);
             }
         }
-        //list的内容也刷新一遍。
-        //list.clear();
-        //list.addAll(newList);
         return newList;
     }
 
     private boolean isKeyword(String content, int[] pos) {
         boolean bRet = false;
         int start = pos[0];
-        //if(start >= 1){
-        //	char separator = content.charAt(start - 1);
-        //	if(separator != ' ' && separator != '\t'){
-        //	return bRet;
-        //	}
-        //}
         for (int jLoop = 0; jLoop < KEYWORDS.length; jLoop++) {
             String keyword = KEYWORDS[jLoop];
             if (content.length() < start + keyword.length()) {
                 continue;
             }
-            String sub = content.substring(start, start + keyword.length());
-            sub = sub.trim();
-            //char separator = content.charAt(start+ keyword.length() + 1);
+            String sub = content.substring(start, start + keyword.length()).trim();
             if (keyword.equalsIgnoreCase(sub)) {
                 pos[1] = start + keyword.length();
                 bRet = true;
@@ -414,7 +392,6 @@ public class ConstraintCreator implements DroolsPartsCreator {
         StringBuffer java = new StringBuffer();
         java.append("boolean bResult = false;\n");
         java.append("bResult = (");
-
         for (Word word : express) {
             if (word.type == TYPE.VARIABLE) {
                 java.append("?.");
@@ -442,7 +419,7 @@ public class ConstraintCreator implements DroolsPartsCreator {
         int firstOr = -1, firstAnd = -1, firstNot = -1;
         for (int iLoop = 0; iLoop < list.size(); iLoop++) {
             Word unit = list.get(iLoop);
-            //取得括号外的内容。括号中的内容不作为划分的信息。
+            //取得括号外的内容，括号中的内容不作为划分的信息
             if (unit.level == 0) {
                 //双目运算符
                 if (unit.type == TYPE.BINOCULAR) {
@@ -488,8 +465,7 @@ public class ConstraintCreator implements DroolsPartsCreator {
             root.right = breakExpress(root.rightSubList, root.right, object);
 
             root.calculate();
-            //不带运算符的情况。
-        } else if (current == null && list.size() > 0) {
+        } else if (current == null && list.size() > 0) { //不带运算符的情况
             if (list.size() == 1 && list.get(0).type == TYPE.VARIABLE) {
                 root.name = "VARIABLE";
                 root.operator = list.get(0).element;

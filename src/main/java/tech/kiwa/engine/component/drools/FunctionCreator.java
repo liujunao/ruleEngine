@@ -1,19 +1,20 @@
 package tech.kiwa.engine.component.drools;
 
+import com.alibaba.druid.util.StringUtils;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.alibaba.druid.util.StringUtils;
-
 public class FunctionCreator implements DroolsPartsCreator {
     private String functionName;
     private String reference;
-    private Map<String, String> params = new HashMap<String, String>();
-    private List<String> paramTypes = new ArrayList<String>();
-    private List<String> paramNames = new ArrayList<String>();
+    private Map<String, String> params = new HashMap<>();
+    private List<String> paramTypes = new ArrayList<>();
+    private List<String> paramNames = new ArrayList<>();
     private String content;
+    private DroolsBuilder builder = null;
 
     public String getFunctionName() {
         return functionName;
@@ -55,7 +56,6 @@ public class FunctionCreator implements DroolsPartsCreator {
             javaBuffer.append(fun.functionName);
             javaBuffer.append(" ");
             javaBuffer.append(" (");
-            //Set<String> nameSet = fun.params.keySet();
             for (int iLoop = 0; iLoop < fun.paramNames.size(); iLoop++) {
                 String name = fun.paramNames.get(iLoop);
                 String type = fun.paramTypes.get(iLoop);
@@ -78,10 +78,7 @@ public class FunctionCreator implements DroolsPartsCreator {
     }
 
     private FunctionCreator() {
-
     }
-
-    private DroolsBuilder builder = null;
 
     public static FunctionCreator create(String content, DroolsBuilder builder) {
         if (StringUtils.isEmpty(content)) {

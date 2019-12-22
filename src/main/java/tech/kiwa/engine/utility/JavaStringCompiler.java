@@ -1,23 +1,22 @@
 package tech.kiwa.engine.utility;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import tech.kiwa.engine.utility.MemoryJavaFileManager.MemoryInputJavaFileObject;
 
 import javax.tools.JavaCompiler;
 import javax.tools.JavaCompiler.CompilationTask;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
-
-import tech.kiwa.engine.utility.MemoryJavaFileManager.MemoryInputJavaFileObject;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class JavaStringCompiler {
     private JavaCompiler compiler;
     private StandardJavaFileManager stdManager;
     private MemoryJavaFileManager fileManager = null;
     private MemoryClassLoader classLoader = null;
-    private List<MemoryInputJavaFileObject> javaList = new ArrayList<MemoryInputJavaFileObject>();
+    private List<MemoryInputJavaFileObject> javaList = new ArrayList<>();
 
     public JavaStringCompiler() {
         this.compiler = ToolProvider.getSystemJavaCompiler();

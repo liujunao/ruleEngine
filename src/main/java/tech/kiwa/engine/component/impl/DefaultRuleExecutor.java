@@ -1,21 +1,8 @@
 package tech.kiwa.engine.component.impl;
 
-import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import tech.kiwa.engine.component.AbstractCommand;
 import tech.kiwa.engine.component.AbstractRuleItem;
 import tech.kiwa.engine.entity.ItemExecutedResult;
@@ -25,24 +12,15 @@ import tech.kiwa.engine.exception.RuleEngineException;
 import tech.kiwa.engine.framework.DBAccesser;
 import tech.kiwa.engine.utility.PropertyUtil;
 
+import java.math.BigDecimal;
+import java.sql.*;
+import java.util.*;
+import java.util.Date;
+
 public class DefaultRuleExecutor extends AbstractRuleItem {
     private Logger log = LoggerFactory.getLogger(DefaultRuleExecutor.class);
 
-    private static volatile DBAccesser accesser = null;        //数据库访问类。
-
-    @SuppressWarnings("unchecked")
-    private DBAccesser loadDBAccesser() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-        if (accesser == null) {
-            String className = PropertyUtil.getProperty("db.accesser");
-            Class<DBAccesser> DBClass = (Class<DBAccesser>) Class.forName(className);
-            synchronized (DBAccesser.class) {
-                if (null == accesser) {
-                    accesser = DBClass.newInstance();
-                }
-            }
-        }
-        return accesser;
-    }
+    private static volatile DBAccesser accesser = null; //数据库访问类
 
     @Override
     public ItemExecutedResult doCheck(RuleItem item) throws RuleEngineException {
@@ -73,7 +51,7 @@ public class DefaultRuleExecutor extends AbstractRuleItem {
                 log.debug("the parameters count must be equal to the count of the question mark. item_no = {},  item.desc = {}", item.getItemNo(), item.getContent());
                 throw new RuleEngineException("the parameters count must be equal to the count of the question mark.");
             }
-            paramList = new ArrayList<Object>();
+            paramList = new ArrayList<>();
             for (int iLoop = 0; iLoop < paramTypes.length; iLoop++) {
                 String type = paramTypes[iLoop];
                 paramList.add(getParamValue(params[iLoop], type));
@@ -125,6 +103,20 @@ public class DefaultRuleExecutor extends AbstractRuleItem {
                 break;
         }
         return value;
+    }
+
+    @SuppressWarnings("unchecked")
+    private DBAccesser loadDBAccesser() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+        if (accesser == null) {
+            String className = PropertyUtil.getProperty("db.accesser"); //获取数据连接方式
+            Class<DBAccesser> DBClass = (Class<DBAccesser>) Class.forName(className);
+            synchronized (DBAccesser.class) {
+                if (null == accesser) {
+                    accesser = DBClass.newInstance();
+                }
+            }
+        }
+        return accesser;
     }
 
     /**
@@ -182,8 +174,7 @@ public class DefaultRuleExecutor extends AbstractRuleItem {
                     String colName = columnInfo.getColumnName(iLoop);
                     retMap.put(colName, res.getObject(iLoop));
                 }
-                //无条件break.只读取第一行记录。
-                break;
+                break; //无条件break.只读取第一行记录
             }
             res.close();
             stmt.close();

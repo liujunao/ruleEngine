@@ -1,28 +1,25 @@
 package tech.kiwa.engine.component.impl;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
 import tech.kiwa.engine.component.AbstractRuleReader;
 import tech.kiwa.engine.entity.RuleItem;
 import tech.kiwa.engine.exception.RuleEngineException;
 import tech.kiwa.engine.utility.PropertyUtil;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
 //xml 读取规则
 public class XMLRuleReader extends AbstractRuleReader {
     private static Logger log = LoggerFactory.getLogger(XMLRuleReader.class);
-
     private List<RuleItem> itemList = null; //存放 xml 中获取的规则列表
 
     @Override
@@ -32,8 +29,7 @@ public class XMLRuleReader extends AbstractRuleReader {
         }
         itemList = new ArrayList<>();
         try {
-            // 创建 DOM 文档对象
-            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); // 创建 DOM 文档对象
             String configFile = PropertyUtil.getProperty("xml.rule.filename"); //xml 文件的位置属性
             //File.separator： 文件分隔符：/ 或 \
             if (!configFile.startsWith(File.separator)) { //安全校验：不以 / 开头

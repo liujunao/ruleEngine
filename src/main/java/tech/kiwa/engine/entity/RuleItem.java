@@ -1,9 +1,9 @@
 package tech.kiwa.engine.entity;
 
+import tech.kiwa.engine.framework.OperatorFactory;
+
 import java.io.Serializable;
 import java.util.Date;
-
-import tech.kiwa.engine.framework.OperatorFactory;
 
 //规则列表 pojo
 public class RuleItem implements Serializable {
@@ -116,6 +116,7 @@ public class RuleItem implements Serializable {
 
     /**
      * 获取当前规则的 itemNo
+     *
      * @param name
      * @return
      */

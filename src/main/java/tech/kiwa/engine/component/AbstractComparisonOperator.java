@@ -12,6 +12,7 @@ public abstract class AbstractComparisonOperator implements Component {
         this.register();
     }
 
+    @Override
     public void register() throws RuleEngineException {
         OperatorFactory optMgr = OperatorFactory.getInstance();
         if (OperatorFactory.OPR_CODE.isReserved(comparisonCode)) {

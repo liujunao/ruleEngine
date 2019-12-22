@@ -4,6 +4,11 @@ import com.alibaba.druid.util.StringUtils;
 
 public class PackageCreator implements DroolsPartsCreator {
     private String packageName = null;
+    @SuppressWarnings("unused")
+    private DroolsBuilder builder = null;
+
+    private PackageCreator() {
+    }
 
     @Override
     public String toJavaString() {
@@ -18,13 +23,6 @@ public class PackageCreator implements DroolsPartsCreator {
     public String getName() {
         return packageName;
     }
-
-    private PackageCreator() {
-
-    }
-
-    @SuppressWarnings("unused")
-    private DroolsBuilder builder = null;
 
     public static PackageCreator create(String content, DroolsBuilder builder) {
         if (StringUtils.isEmpty(content)) {

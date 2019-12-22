@@ -1,18 +1,16 @@
 package tech.kiwa.engine.component.drools;
 
+import com.alibaba.druid.util.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import tech.kiwa.engine.component.AbstractRuleItem;
+import tech.kiwa.engine.exception.RuleEngineException;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.alibaba.druid.util.StringUtils;
-
-import tech.kiwa.engine.component.AbstractRuleItem;
-import tech.kiwa.engine.exception.RuleEngineException;
 
 public class QueryCreator implements DroolsPartsCreator {
     private Logger log = LoggerFactory.getLogger(QueryCreator.class);
@@ -22,7 +20,6 @@ public class QueryCreator implements DroolsPartsCreator {
     private Map<String, String> params = null;
     private LocalCreator result = null;
     private ConstraintCreator condition = null;
-
     private DroolsBuilder builder = null;
 
     public ConstraintCreator getCondition() {
@@ -50,7 +47,6 @@ public class QueryCreator implements DroolsPartsCreator {
     }
 
     private QueryCreator() {
-
     }
 
     public static QueryCreator create(String content, DroolsBuilder builder) {
@@ -102,7 +98,6 @@ public class QueryCreator implements DroolsPartsCreator {
                 creator.result = new LocalCreator();
                 creator.result.setName(sections[0].trim());
                 pos = sections[1].indexOf("(");
-                //sections = sections[1].split("\\(");
                 creator.result.setReference(sections[1].substring(0, pos));
                 if (sections[1].endsWith(")")) {
                     sections[1] = sections[1].substring(pos, sections[1].length());
