@@ -28,7 +28,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/thriftCompiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/RuleEngine.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/druid.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ruleEngine.properties" beforeDir="false" />
@@ -304,7 +304,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576862287683</updated>
       <workItem from="1576862304098" duration="11173000" />
-      <workItem from="1577064817285" duration="1558000" />
+      <workItem from="1577064817285" duration="1681000" />
     </task>
     <servers />
   </component>
