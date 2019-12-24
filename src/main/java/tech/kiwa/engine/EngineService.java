@@ -21,8 +21,8 @@ import java.util.Random;
 public class EngineService {
     private Logger log = LoggerFactory.getLogger(EngineService.class);
 
-    private AbstractRuleReader itemService = loadService(); //这个操作的目的？？？
-    private String seq = null;
+    private AbstractRuleReader itemService = loadService(); //获取配置文件的配置规则
+    private String seq = null; //
 
     //获取配置文件(xml,property,drools)的配置规则
     @SuppressWarnings("unchecked")
@@ -65,13 +65,17 @@ public class EngineService {
         return this.start((String) object.get("Id"), null);
     }
 
+    /**
+     * @param object
+     * @param sequence
+     * @return
+     * @throws RuleEngineException
+     */
     @SuppressWarnings("unchecked")
     public EngineRunResult start(Object object, String sequence) throws RuleEngineException {
         List<RuleItem> itemList = itemService.readRuleItemList();
         itemList = itemService.sortItem(itemList, null); //过滤出同层级列表，并按优先级排序
 
-        this.seq = sequence;
-        //TODO：。。。
         EngineRunResult ret_Result = new EngineRunResult();
         ret_Result.setResult(RESULT.PASSED);
         ret_Result.setResult_desc("PASSED");
@@ -119,7 +123,7 @@ public class EngineService {
                 }
                 //直接地调用doCheck的函数
                 auditInstance.setObject(object);
-                ItemExecutedResult result = null;
+                ItemExecutedResult result;
                 //如果是重复执行
                 do {
                     result = auditInstance.doCheck(item);

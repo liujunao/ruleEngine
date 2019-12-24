@@ -15,6 +15,7 @@ import tech.kiwa.engine.utility.PropertyUtil;
 import java.util.ArrayList;
 import java.util.List;
 
+//
 public class ComplexRuleExecutor extends AbstractRuleItem {
     private Logger log = LoggerFactory.getLogger(DefaultRuleExecutor.class);
 
@@ -23,6 +24,7 @@ public class ComplexRuleExecutor extends AbstractRuleItem {
         VARIABLE, BINOCULAR, MONOCULAR, LEFT_BRACKET, RIGHT_BRACKET
     }
 
+    //
     class OperationUnit {
         public TYPE type; // 1 = "运算变量"  2 = 双目运算符号   3 = 单目运算符号  4 = 左括号  5 = 右括号
         public String element; //

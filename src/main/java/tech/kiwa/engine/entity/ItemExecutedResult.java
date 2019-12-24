@@ -34,7 +34,7 @@ public class ItemExecutedResult {
     }
 
     public void setResult(int result) {
-        this.result.setValue(result);
+        this.result.typeFromIntToString(result);
         if (this.result == RESULT.WAIT) {
             continueFlag = BROKEN;
         }

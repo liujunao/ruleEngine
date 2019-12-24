@@ -18,6 +18,7 @@ public class ConstraintCreator implements DroolsPartsCreator {
     private DroolsPartsCreator container = null;
     private static final String[] KEYWORDS = new String[]{"<=", ">=", "==", "!=", "contains", "not contains",
             "memberof", "not memberof", "matches", "not matches", "<", ">"};
+
     // 1 = 运算变量; 2 = 运算符;  3 = 双目运算符号;   4 = 单目运算符号 ; 5 = 左括号 ; 6 = 右括号
     private enum TYPE {
         VARIABLE, OPERATOR, BINOCULAR, MONOCULAR, LEFT_BRACKET, RIGHT_BRACKET

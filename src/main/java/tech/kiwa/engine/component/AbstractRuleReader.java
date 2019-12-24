@@ -93,7 +93,7 @@ public abstract class AbstractRuleReader {
             }
             if (!StringUtils.isNumeric(item.getResult())) {
                 RESULT result = RESULT.EMPTY;
-                if (!result.parse(item.getResult())) {
+                if (!result.typeFromStringToInt(item.getResult())) {
                     log.debug("result cannot be empty and must be numberic if it's free-running rule. ruleid ={}", item.getItemNo());
                     bRet = false;
                 }
@@ -136,7 +136,7 @@ public abstract class AbstractRuleReader {
             }
             if (!StringUtils.isNumeric(item.getResult())) { //状态：1 通过，2 关注，3 拒绝
                 RESULT result = RESULT.EMPTY;
-                if (!result.parse(item.getResult())) {
+                if (!result.typeFromStringToInt(item.getResult())) {
                     log.debug("result cannot be empty and must be numberic if it's free-running rule. ruleid ={}", item.getItemNo());
                     bRet = false;
                 }

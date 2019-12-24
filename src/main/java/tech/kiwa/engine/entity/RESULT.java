@@ -1,6 +1,6 @@
 package tech.kiwa.engine.entity;
 
-//这个枚举类没看懂
+//枚举运行结果
 public enum RESULT {
     EMPTY(0), PASSED(1), CONCERNED(2), REJECTED(3), WAIT(4), SELFDEFINE(5);
 
@@ -8,14 +8,19 @@ public enum RESULT {
     }
 
     RESULT(int value) {
-        this.setValue(value);
+        this.typeFromIntToString(value);
     }
 
     //结果类型
     private int value = 0; //数字表示 == 字符串表示
     private String defaultDesc = ""; //字符串表示 == 数字表示
 
-    public void setValue(int value) {
+    /**
+     * 将 int 表示的类型转换为字符串表示的类型
+     *
+     * @param value
+     */
+    public void typeFromIntToString(int value) {
         switch (value) {
             case 1:
                 defaultDesc = "PASSED";
@@ -38,31 +43,47 @@ public enum RESULT {
         this.value = value;
     }
 
-    public boolean parse(String value) {
+    /**
+     * 将字符串表示的结果类型转换为 int 表示的结果类型
+     *
+     * @param value
+     * @return false：不存在该结果类型
+     */
+    public boolean typeFromStringToInt(String value) {
         boolean bRet = true;
         value = value.toUpperCase();
         switch (value) {
             case "PASSED":
+                this.value = 1;
+                break;
             case "RESULT.PASSED":
                 this.value = 1;
                 this.defaultDesc = "PASSED";
                 break;
             case "CONCERNED":
+                this.value = 2;
+                break;
             case "RESULT.CONCERNED":
                 this.value = 2;
                 this.defaultDesc = "CONCERNED";
                 break;
             case "REJECTED":
+                this.value = 3;
+                break;
             case "RESULT.REJECTED":
                 this.value = 3;
                 this.defaultDesc = "REJECTED";
                 break;
             case "WAIT":
+                this.value = 4;
+                break;
             case "RESULT.WAIT":
                 this.value = 4;
                 this.defaultDesc = "WAIT";
                 break;
             case "SELFDEFINE":
+                this.value = 5;
+                break;
             case "RESULT.SELFDEFINE":
                 this.value = 5;
                 this.defaultDesc = "SELFDEFINE";
@@ -80,7 +101,7 @@ public enum RESULT {
 
     public static RESULT valueOf(int value) {
         RESULT result = RESULT.EMPTY;
-        result.setValue(value);
+        result.typeFromIntToString(value);
         return result;
     }
 
@@ -93,6 +114,6 @@ public enum RESULT {
     }
 
     public void setName(String defaultDesc) {
-        this.parse(defaultDesc);
+        this.typeFromStringToInt(defaultDesc);
     }
 }
