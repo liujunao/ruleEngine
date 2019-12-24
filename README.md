@@ -1,5 +1,7 @@
 wiki： [Hale-Lee/RuleEngine](https://github.com/Hale-Lee/RuleEngine/wiki)
 
+- 另一个表达式引擎： [aviator](https://github.com/killme2008/aviator/wiki) 
+
 ##使用方法
 
 ### 1. 在 `POM.XML` 文件中添加下面的内容
@@ -32,10 +34,10 @@ rule.reader=xml/drools/database
 			st.setAge(5);
 			st.name = "tom";
 			st.sex = 1;
-
+	
 			EngineRunResult result = service.start(st);
 			System.out.println(result.getResult().getName());
-
+	
 			System.out.println(st.getAge());
 		} catch (RuleEngineException e) {
 			e.printStackTrace();
@@ -72,7 +74,7 @@ rule.reader=xml/drools/database
     item_no|content|exe_sql|exe_class|param_name|param_type|comparison_code|comparison_value|baseline|result|executor|priority|continue_flag|parent_item_no|group_express|remark|comments|enable_flag|create_time|update_time
     11|黑名单|select count(1) as cnt from tl_blacklist where customer_no = ? and delete_flag = 1|customer_no|java.lang.String|01|==|0|PASSED|100|1|1|2018-02-26 12:40:15.000000|2018-02-26 12:40:18.000000
     ```
-		
+	
     数据库连接方式时，需要同时设置db.accesser: 
     - 如果使用 druid 的数据库连接池，可以设置成db.accesser=tech.kiwa.engine.utility.DirectDBAccesser
         > DirectDBAccesser 提供了开关变量 UseDruid: 

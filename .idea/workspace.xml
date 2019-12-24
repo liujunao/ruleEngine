@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37b4833d-8154-4058-a224-037daa1b3321" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_access_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ojdbc_ojdbc_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/EngineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/EngineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractRuleReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/AbstractRuleReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ConstraintCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/drools/ConstraintCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/ComplexRuleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/component/impl/ComplexRuleExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/EngineRunResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/EngineRunResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/ItemExecutedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/ItemExecutedResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RESULT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/kiwa/engine/entity/RESULT.java" afterDir="false" />
-    </list>
+    <list default="true" id="37b4833d-8154-4058-a224-037daa1b3321" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +234,7 @@
       <updated>1576862287683</updated>
       <workItem from="1576862304098" duration="11173000" />
       <workItem from="1577064817285" duration="3999000" />
-      <workItem from="1577152944418" duration="229000" />
+      <workItem from="1577152944418" duration="307000" />
     </task>
     <servers />
   </component>
