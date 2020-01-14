@@ -4,7 +4,7 @@ package tech.kiwa.engine.entity;
 public class EngineRunResult {
     private RESULT result = RESULT.EMPTY;
     private String result_desc; //对应 RESULT 的 defaultDesc，即字符串表示的结果类型
-    private String sequence; //？？？
+    private String sequence; //TODO：作用？？？
 
     public RESULT getResult() {
         return result;
@@ -14,6 +14,7 @@ public class EngineRunResult {
         this.result = result;
     }
 
+    //TODO：该方法有问题
     public void setResult(String result) {
         boolean bRet = this.result.typeFromStringToInt(result);
         if (!bRet) {

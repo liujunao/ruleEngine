@@ -1,9 +1,11 @@
 package tech.kiwa.engine.entity;
 
 public class ItemExecutedResult {
+    //TODO: 这三个参数的作用？？？
     public static final int CONTINUE = 1;
     public static final int LOOP = 2;
     public static final int BROKEN = 3;
+
     private RESULT result = RESULT.EMPTY;
     private String remark;
     private boolean returnValue;
@@ -28,6 +30,7 @@ public class ItemExecutedResult {
         }
     }
 
+    //TODO：多此一举？？？
     public void setResult(String result) {
         int iResult = Integer.parseInt(result);
         this.setResult(iResult);

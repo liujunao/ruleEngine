@@ -24,11 +24,11 @@ class MemoryJavaFileManager extends ForwardingJavaFileManager<JavaFileManager> {
     }
 
     @Override
-    public void flush() throws IOException {
+    public void flush() {
     }
 
     @Override
-    public void close() throws IOException {
+    public void close() {
         classBytes.clear();
     }
 
@@ -67,6 +67,7 @@ class MemoryJavaFileManager extends ForwardingJavaFileManager<JavaFileManager> {
 
     class MemoryOutputJavaFileObject extends SimpleJavaFileObject {
         final String name;
+
         MemoryOutputJavaFileObject(String name) {
             super(URI.create("string:///" + name), Kind.CLASS);
             this.name = name;

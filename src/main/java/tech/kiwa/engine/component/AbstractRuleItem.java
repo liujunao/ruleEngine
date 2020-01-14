@@ -22,7 +22,7 @@ public abstract class AbstractRuleItem {
      * 获取 SpringMVC 中的 Service 对象，若未使用 SpringMVC，则返回 null
      *
      * @param serviceName Service名称
-     * @return 返回的 Serivce 对象
+     * @return 返回的 Service 对象
      */
     protected Object getService(String serviceName) {
         return SpringContextHelper.getBean(serviceName);
@@ -54,7 +54,7 @@ public abstract class AbstractRuleItem {
         if (resultSet.containsKey("cnt")) {
             retValue = resultSet.get("cnt").toString();
         } else if (resultSet.size() == 1) {
-            Set<String> keySet = (Set<String>) resultSet.keySet();
+            Set<String> keySet = resultSet.keySet();
             for (String key : keySet) {
                 if (null == resultSet.get(key)) {
                     retValue = null;
@@ -65,7 +65,7 @@ public abstract class AbstractRuleItem {
                 }
             }
         } else if (resultSet.size() > 1) {
-            Set<String> keySet = (Set<String>) resultSet.keySet();
+            Set<String> keySet = resultSet.keySet();
             for (String key : keySet) {
                 if (null == resultSet.get(key)) {
                     retValue = null;
@@ -82,9 +82,7 @@ public abstract class AbstractRuleItem {
         } else {
             throw new RuleEngineException("unknow resultset.");
         }
-        boolean bRet = false;
-        bRet = comparisonOperate(retValue, item.getComparisonCode(), item.getBaseline());
-        return bRet;
+        return comparisonOperate(retValue, item.getComparisonCode(), item.getBaseline());
     }
 
     /**

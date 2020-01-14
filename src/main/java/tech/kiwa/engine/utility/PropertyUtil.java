@@ -67,7 +67,7 @@ public class PropertyUtil {
             }
         }
         if (prop != null) {
-            Set<Object> keySet = (Set<Object>) prop.keySet();
+            Set<Object> keySet = prop.keySet();
             for (Object key : keySet) {
                 //如果key不是字符串格式的，那么跳过
                 if (key instanceof String) {

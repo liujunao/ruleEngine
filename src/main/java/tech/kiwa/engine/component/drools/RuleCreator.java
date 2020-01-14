@@ -19,7 +19,7 @@ public class RuleCreator implements DroolsPartsCreator {
     private Logger log = LoggerFactory.getLogger(RuleCreator.class);
 
     private RuleItem item = new RuleItem();
-    private List<Condition> conditionList = new ArrayList<Condition>();
+    private List<Condition> conditionList = new ArrayList<>();
     private String command;
     private DroolsBuilder builder = null;
 

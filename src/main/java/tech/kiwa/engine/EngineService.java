@@ -62,7 +62,7 @@ public class EngineService {
     }
 
     public EngineRunResult start(Map<String, Object> object) throws RuleEngineException {
-        return this.start((String) object.get("Id"), null);
+        return this.start(object.get("Id"), null);
     }
 
     /**
@@ -148,17 +148,11 @@ public class EngineService {
         return ret_Result;
     }
 
-    protected String writeExecutedLog(Object object, RuleItem item, ItemExecutedResult result) throws RuleEngineException {
+    protected String writeExecutedLog(Object object, RuleItem item, ItemExecutedResult result) {
         if (StringUtils.isEmpty(seq)) {
-            seq = String.valueOf(System.currentTimeMillis());
-            seq = seq + String.valueOf(new Random(1000).nextInt());
+            seq = System.currentTimeMillis() + String.valueOf(new Random(1000).nextInt());
         }
-        try {
-            ResultLogFactory.getInstance().writeLog(object, item, result);
-        } catch (RuleEngineException e) {
-            log.debug("write log error.");
-            throw e;
-        }
+        ResultLogFactory.getInstance().writeLog(object, item, result);
         return seq;
     }
 }

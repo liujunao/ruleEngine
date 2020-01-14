@@ -12,8 +12,8 @@ public enum RESULT {
     }
 
     //结果类型
-    private int value = 0; //数字表示 == 字符串表示
-    private String defaultDesc = ""; //字符串表示 == 数字表示
+    private int value = 0; //数字表示
+    private String defaultDesc = ""; //字符串表示
 
     /**
      * 将 int 表示的类型转换为字符串表示的类型

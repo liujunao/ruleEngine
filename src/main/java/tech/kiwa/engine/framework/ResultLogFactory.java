@@ -24,7 +24,7 @@ public class ResultLogFactory implements FactoryMethod {
         logList.add((AbstractResultLogRecorder) logger);
     }
 
-    public boolean writeLog(Object object, RuleItem item, ItemExecutedResult result) throws RuleEngineException {
+    public boolean writeLog(Object object, RuleItem item, ItemExecutedResult result) {
         boolean bRet = true;
         for (AbstractResultLogRecorder logger : logList) {
             bRet = bRet && logger.writeLog(object, item, result);

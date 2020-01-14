@@ -17,23 +17,25 @@ import java.util.Properties;
 public class DirectDBAccesser implements DBAccesser {
     private static Logger log = LoggerFactory.getLogger(DirectDBAccesser.class);
 
-    private static boolean UseDruid = true;
+    private static boolean useDruid = true;
     private static ArrayList<Connection> connList = new ArrayList<>(); //只用了一个连接， 没有用到连接池
     private static volatile DataSource dataSource = null;
 
+    //TODO：多此一举
     public static boolean isUseDruid() {
-        return UseDruid;
+        return useDruid;
     }
 
+    //TODO: 多此一举
     public static void setUseDruid(boolean useDruid) {
-        UseDruid = useDruid;
+        DirectDBAccesser.useDruid = useDruid;
     }
 
     /**
-     * 根据类型获取数据源.  非线程安全的函数
+     * 根据类型获取数据源(非线程安全)
      *
-     * @return druid或者dbcp数据源
-     * @throws Exception the exception
+     * @return druid 或 dbcp 数据源
+     * @throws Exception
      */
     public static final DataSource getDataSource() throws Exception {
         Properties prop = PropertyUtil.loadPropertyFile("druid.properties");
@@ -80,7 +82,7 @@ public class DirectDBAccesser implements DBAccesser {
 
     @Override
     public Connection getConnection() {
-        if (UseDruid) {
+        if (useDruid) {
             try {
                 if (dataSource == null) {
                     synchronized (DataSource.class) {
@@ -106,12 +108,12 @@ public class DirectDBAccesser implements DBAccesser {
                 log.debug(e.getMessage());
             }
         }
-        //if the proper connection is not found , create a new one.
+        //conn 为空，创建一个新的
         return openConnection();
     }
 
     public void closeConnection(Connection conn) {
-        if (UseDruid) {
+        if (useDruid) {
             try {
                 conn.close();
             } catch (SQLException e) {

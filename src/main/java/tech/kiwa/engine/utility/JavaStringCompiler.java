@@ -56,15 +56,14 @@ public class JavaStringCompiler {
     }
 
     /**
-     * Load class from compiled classes.
+     * Load class from compiled classes
      *
-     * @param name       Full class name.
-     * @param classBytes Compiled results as a Map.
-     * @return The Class instance.
-     * @throws ClassNotFoundException If class not found.
-     * @throws IOException            If load error.
+     * @param name       Full class name
+     * @param classBytes Compiled results as a Map
+     * @return The Class instance
+     * @throws ClassNotFoundException If class not found
      */
-    public Class<?> loadClass(String name, Map<String, byte[]> classBytes) throws ClassNotFoundException, IOException {
+    public Class<?> loadClass(String name, Map<String, byte[]> classBytes) throws ClassNotFoundException {
         if (classLoader == null) {
             classLoader = new MemoryClassLoader(classBytes);
         } else {

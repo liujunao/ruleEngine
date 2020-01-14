@@ -10,14 +10,10 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-//通过SpringContext获取数据库连接
+//通过 SpringContext 获取数据库连接
 @Service
 public class SpringDBAccesser implements ApplicationContextAware, DBAccesser {
     private static ApplicationContext applicationContext = null;
-
-    public static ApplicationContext getApplicationContext() {
-        return applicationContext;
-    }
 
     @Override
     public Connection getConnection() {

@@ -1,5 +1,8 @@
 package tech.kiwa.engine.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import tech.kiwa.engine.framework.OperatorFactory;
 
 import java.io.Serializable;

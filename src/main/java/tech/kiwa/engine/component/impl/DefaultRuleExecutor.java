@@ -129,7 +129,7 @@ public class DefaultRuleExecutor extends AbstractRuleItem {
     private Map<String, Object> executeSQL(String sqlStr, List<Object> paramList) throws RuleEngineException {
         PreparedStatement stmt = null;
         ResultSet res = null;
-        Map<String, Object> retMap = new HashMap<String, Object>();
+        Map<String, Object> retMap = new HashMap<>();
         try {
             loadDBAccesser();
             Connection conn = accesser.getConnection();

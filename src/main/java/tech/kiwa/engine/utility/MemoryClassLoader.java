@@ -7,12 +7,12 @@ import java.util.Set;
 public class MemoryClassLoader extends ClassLoader {
     private Map<String, byte[]> classBytes = new HashMap<>();
 
+    public MemoryClassLoader() {
+    }
+
     public MemoryClassLoader(Map<String, byte[]> classBytes) {
         super(MemoryClassLoader.class.getClassLoader());
         this.classBytes.putAll(classBytes);
-    }
-
-    public MemoryClassLoader() {
     }
 
     @Override

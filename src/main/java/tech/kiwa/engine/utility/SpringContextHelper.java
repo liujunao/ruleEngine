@@ -13,26 +13,15 @@ public class SpringContextHelper implements ApplicationContextAware {
     private static SpringContextHelper thisInstance = new SpringContextHelper();
     private static ApplicationContext applicationContext = null;
 
-    public static ApplicationContext getApplicationContext() {
-        return applicationContext;
-    }
-
-    public static SpringContextHelper getInstance() {
-        if (null == thisInstance) {
-            return null;
-        }
-        return thisInstance;
-    }
-
     /***
-     * 根据bean的id获取配置文件中相应的bean
+     * 根据 beanId 获取配置文件中的 bean
      *
-     * @param name  要取得的bean的名称
-     * @return 返回service对象，或者是bean对象
-     * @throws BeansException   bean找不到等异常。
+     * @param name  bean 名称
+     * @return service 对象或 bean 对象
+     * @throws BeansException   bean 找不到等异常
      */
     public static Object getBean(String name) throws BeansException {
-        return (applicationContext).getBean(name);
+        return applicationContext.getBean(name);
     }
 
     /***
@@ -54,7 +43,7 @@ public class SpringContextHelper implements ApplicationContextAware {
      * @param <T> 参数类型的模板类
      * @param requiredType   要取得的bean的类型
      * @return 返回service对象，或者是bean对象
-     * @throws BeansException bean找不到等异常。
+     * @throws BeansException bean找不到等异常
      */
     public static <T> T getBean(Class<T> requiredType) throws BeansException {
         return applicationContext.getBean(requiredType);
@@ -66,7 +55,7 @@ public class SpringContextHelper implements ApplicationContextAware {
      * @param name 要取得的bean的名称
      * @param args  要取得的bean的类型
      * @return 返回service对象，或者是bean对象
-     * @throws BeansException  bean找不到等异常。
+     * @throws BeansException  bean找不到等异常
      */
     public static Object getBean(String name, Object... args) throws BeansException {
         return applicationContext.getBean(name, args);
